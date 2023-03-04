@@ -1,10 +1,17 @@
+import React from "react";
 
-export default function Home() {
+type Props = {};
+
+function page({}: Props) {
   return (
     <>
-    <main>
-      <h1 className="text-lg font-bold text-red-500">This is the home page</h1>
-    </main>
+      <main className="relative w-screen min-w-screen max-w-screen h-screen min-hscreen max-h-screen bg-gradient-to-b from-[#000] to-[transparent] top-0 pt-[64px]">
+        <h1 className="text-lg font-bold text-red-500">
+          This is the HOME page
+        </h1>
+      </main>
     </>
-  )
+  );
 }
+
+export default page;
