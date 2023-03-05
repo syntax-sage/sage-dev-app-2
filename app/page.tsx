@@ -9,6 +9,7 @@ import { Random } from "tsparticles-engine/types/Options/Classes/Random";
 type Props = {};
 
 function page({}: Props) {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
 
@@ -18,6 +19,7 @@ function page({}: Props) {
     await loadFull(engine);
   }, []);
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const particlesLoaded = useCallback(
     async (container: Container | undefined) => {
       await console.log(container);
