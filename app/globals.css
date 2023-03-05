@@ -46,3 +46,9 @@ body {
   padding: 6rem;
   min-height: 100vh;
 }
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+  background: transparent !important;
+}

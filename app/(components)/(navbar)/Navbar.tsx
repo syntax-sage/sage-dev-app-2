@@ -9,7 +9,7 @@ type Props = {};
 function Navbar({}: Props) {
   return (
     <>
-      <nav className="fixed h-[64px] px-10 pl-5 flex items-center justify-between max-w-screen min-w-screen w-screen overflow-x-hidden backdrop-blur-[30px] z-[999] border-b-2 border-[rgba(255,255,255,0.1)] text-slate-100">
+      <nav className="fixed h-[64px] px-10 pl-5 flex items-center justify-between max-w-screen min-w-screen w-screen overflow-x-hidden backdrop-blur-[15px] z-[999] border-b-2 border-[rgba(255,255,255,0.1)] text-slate-100">
         <Link href={"/"} className="text-xl font-black flex items-center">
           <Image
             width={48}
