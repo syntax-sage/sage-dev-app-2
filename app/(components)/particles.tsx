@@ -34,7 +34,7 @@ const particles = (props: Props) => {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-            fpsLimit: 120,
+          fpsLimit: 120,
           interactivity: {
             events: {
               onClick: {
@@ -160,9 +160,6 @@ const particles = (props: Props) => {
             color: {
               value: "#D9D9D9",
             },
-            collisions: {
-              enable: false,
-            },
             move: {
               direction: "outside",
               enable: true,
@@ -172,7 +169,7 @@ const particles = (props: Props) => {
 
               random: true,
               speed: { min: 3, max: 10 },
-              straight: false,
+              straight: true,
             },
             number: {
               density: {

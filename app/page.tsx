@@ -31,39 +31,39 @@ function page({}: Props) {
           </h1>
         </div>
         <div className="text-center mt-5">
-          <h2 className="text-[32px] font-medium">Join our community:</h2>
+          <h2 className="text-[32px] font-medium">Join The Community:</h2>
           <ul className="flex flex-row justify-center text-[32px] mt-2 gap-5">
-            <li>
+            <li className="hover:text-[rgb(29,155,240)] transition-all duration-300">
               <Link href={"https://twitter.com/syntax_sage"}>
                 <BsTwitter></BsTwitter>
               </Link>
             </li>
-            <li>
+            <li className="hover:text-[#0A66C2] transition-all duration-300">
               <Link href={"https://www.linkedin.com/in/syntax-sage-5b0536265/"}>
                 <BsLinkedin></BsLinkedin>
               </Link>
             </li>
-            <li>
+            <li className="hover:text-[rgb(245,133,41)] transition-all duration-300">
               <Link href={"https://www.instagram.com/syntax.sage/"}>
                 <AiFillInstagram></AiFillInstagram>
               </Link>
             </li>
-            <li>
+            <li className="hover:text-[hsl(0,0%,0%)] transition-all duration-300">
               <Link href={"https://github.com/syntax-sage"}>
                 <BsGithub></BsGithub>
               </Link>
             </li>
-            <li>
+            <li className="hover:text-[hsl(0,100%,50%)] transition-all duration-300">
               <Link href={"https://www.youtube.com/channel/@syntax_sage"}>
                 <BsYoutube></BsYoutube>
               </Link>
             </li>
-            <li>
+            <li className="hover:text-[#FE2C55] transition-all duration-300">
               <Link href={"https://www.tiktok.com/@syntax_sage?lang=en"}>
                 <FaTiktok></FaTiktok>
               </Link>
             </li>
-            <li>
+            <li className="hover:text-[#5865F2] transition-all duration-300">
               <Link href={"https://www.discord.gg/BRpSNDZhFG"}>
                 <BsDiscord></BsDiscord>
               </Link>
