@@ -10,13 +10,6 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    backgroundSize: {
-      auto: "auto",
-      cover: "cover",
-      contain: "contain",
-      "50%": "50%",
-      "150%": "3000px",
-    },
   },
   plugins: [],
 };

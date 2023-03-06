@@ -28,110 +28,181 @@ const particles = (props: Props) => {
     []
   );
   return (
-    <Particles
-      id="tsparticles"
-      init={particlesInit}
-      loaded={particlesLoaded}
-      options={{
-        emitters: {
-          direction: "outside",
-          size: {
-            height: 25,
-            width: 25,
+    <>
+      <Particles
+        id="tsparticles2"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={{
+            fpsLimit: 120,
+          interactivity: {
+            events: {
+              onClick: {
+                enable: false,
+                mode: "push",
+              },
+              onHover: {
+                parallax: { enable: true, force: 20, smooth: 50 },
+                enable: true,
+                mode: "bubble",
+              },
+              resize: true,
+            },
+            modes: {
+              push: {
+                quantity: 4,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+            },
           },
-          position: {
-            x: 50,
-            y: 50,
-          },
-          rate: {
-            delay: 0.1,
-            quantity: 3,
-          },
-        },
-        fpsLimit: 120,
-        interactivity: {
-          events: {
-            onClick: {
+          particles: {
+            twinkle: {
+              particles: {
+                enable: true,
+                color: "#FFD500",
+                frequency: 0.03,
+                opacity: 1,
+              },
+            },
+            color: {
+              value: "#D9D9D9",
+            },
+            collisions: {
               enable: false,
-              mode: "push",
             },
-            onHover: {
-              parallax: { enable: true, force: 20, smooth: 50 },
-              enable: true,
-              mode: "bubble",
+            move: {
+              direction: "outside",
+              enable: false,
+              outModes: {
+                default: "destroy",
+              },
+              random: true,
+              speed: { min: 3, max: 10 },
+              straight: false,
             },
-            resize: true,
-          },
-          modes: {
-            push: {
-              quantity: 4,
+            number: {
+              density: {
+                enable: true,
+                area: 800,
+              },
+              value: 100,
             },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
+            opacity: {
+              value: 1,
             },
-          },
-        },
-        particles: {
-          twinkle: {
-            particles: {
-              enable: true,
-              color: "#FFD500",
-              frequency: 0.03,
-              opacity: 1,
+            shape: {
+              type: ["circle", "square"],
+            },
+            size: {
+              random: true,
+              value: { min: 0.1, max: 3 },
             },
           },
-          color: {
-            value: "#D9D9D9",
-          },
-          collisions: {
-            enable: false,
-          },
-          move: {
+          detectRetina: true,
+        }}
+      />
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={{
+          emitters: {
             direction: "outside",
-            enable: true,
-            outModes: {
-              default: "destroy",
+            size: {
+              height: 25,
+              width: 25,
             },
+            position: {
+              x: 50,
+              y: 50,
+            },
+            rate: {
+              delay: 0.1,
+              quantity: 3,
+            },
+          },
+          fpsLimit: 120,
+          interactivity: {
+            events: {
+              onClick: {
+                enable: false,
+                mode: "push",
+              },
+              onHover: {
+                parallax: { enable: true, force: 20, smooth: 50 },
+                enable: true,
+                mode: "bubble",
+              },
+              resize: true,
+            },
+            modes: {
+              push: {
+                quantity: 4,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+            },
+          },
+          particles: {
+            twinkle: {
+              particles: {
+                enable: true,
+                color: "#FFD500",
+                frequency: 0.03,
+                opacity: 1,
+              },
+            },
+            color: {
+              value: "#D9D9D9",
+            },
+            collisions: {
+              enable: false,
+            },
+            move: {
+              direction: "outside",
+              enable: true,
+              outModes: {
+                default: "destroy",
+              },
 
-            random: true,
-            speed: { min: 3, max: 10 },
-            straight: false,
-          },
-          number: {
-            density: {
-              enable: true,
-              area: 800,
+              random: true,
+              speed: { min: 3, max: 10 },
+              straight: false,
             },
-            value: 50,
-          },
-          opacity: {
-            value: 1,
-          },
-          shape: {
-            type: "circle",
-          },
-          size: {
-            animation: {
-              speed: 2,
-              count: 0.5,
-              enable: true,
-              startValue: "min",
-              destroy: "max",
+            number: {
+              density: {
+                enable: true,
+                area: 800,
+              },
+              value: 50,
             },
-            random: false,
-            value: { min: 1, max: 50 },
+            opacity: {
+              value: 1,
+            },
+            shape: {
+              type: "circle",
+            },
+            size: {
+              animation: {
+                speed: 10,
+                count: 1,
+                enable: true,
+                startValue: "min",
+                destroy: "max",
+              },
+              random: false,
+              value: { min: 1, max: 50 },
+            },
           },
-        },
-        detectRetina: true,
-        background: {
-          image: `${HeroBG}`,
-          position: "50% 50%",
-          repeat: "no-repeat",
-          size: "cover",
-        },
-      }}
-    />
+          detectRetina: true,
+        }}
+      />
+    </>
   );
 };
 

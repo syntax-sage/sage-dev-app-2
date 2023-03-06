@@ -15,22 +15,22 @@ const ToggleMenu = () => {
         <span
           className={
             openMenu
-              ? "transition-all duration-300 relative mx-auto w-[48px] h-[2px] bg-[#ff3a3a] rounded-sm rotate-45 translate-y-[14px]"
-              : "transition-all duration-300 relative mx-auto w-[48px] h-[2px] bg-[#9d9d9d] rounded-sm"
+              ? "transition-all duration-300 relative mx-auto mr-0 w-[48px] h-[2px] bg-[#ff3a3a] rounded-sm rotate-45 translate-y-[14px]"
+              : "transition-all duration-300 relative mx-auto mr-0 w-[48px] h-[2px] bg-[#9d9d9d] rounded-sm"
           }
         ></span>
         <span
           className={
             openMenu
-              ? "transition-all duration-300 relative mx-auto w-[48px] h-[2px] bg-[#9d9d9d] rounded-sm opacity-0 translate-x-[50px]"
-              : "transition-all duration-300 relative mx-auto w-[48px] h-[2px] bg-[#9d9d9d] rounded-sm"
+              ? "transition-all duration-300 relative mx-auto mr-0 w-[48px] h-[2px] bg-[#9d9d9d] rounded-sm opacity-0 translate-x-[50px]"
+              : "transition-all duration-300 relative mx-auto mr-0 w-[40px] h-[2px] bg-[#9d9d9d] rounded-sm"
           }
         ></span>
         <span
           className={
             openMenu
-              ? "transition-all duration-300 relative mx-auto w-[48px] h-[2px] bg-[#ff3a3a] rounded-sm -rotate-45 -translate-y-[14px]"
-              : "transition-all duration-300 relative mx-auto w-[48px] h-[2px] bg-[#9d9d9d] rounded-sm"
+              ? "transition-all duration-300 relative mx-auto mr-0 w-[48px] h-[2px] bg-[#ff3a3a] rounded-sm -rotate-45 -translate-y-[14px]"
+              : "transition-all duration-300 relative mx-auto mr-0 w-[45px] h-[2px] bg-[#9d9d9d] rounded-sm"
           }
         ></span>
       </div>

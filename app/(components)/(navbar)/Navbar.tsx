@@ -25,58 +25,68 @@ function Navbar({}: Props) {
           <span className="p-0 m-0 hidden md:inline-block ">- Syntax Sage</span>
         </Link>
 
-        <div className="hidden lg:inline-grid grid-flow-col gap-5">
-          <Link
-            href={"/"}
-            className={
-              pathname == "/"
-                ? "transition-all duration-300 bg-[rgba(255,255,255,0.1)] py-1 px-2 rounded font-bold"
-                : "transition-all duration-300 bg-transparent py-1 px-2 font-bold text-gray-400 hover:text-[#eee] "
-            }
-          >
-            Home
-          </Link>
-          <Link
-            href={"/blog"}
-            className={
-              pathname == "/blog"
-                ? "transition-all duration-300 bg-[rgba(255,255,255,0.1)] py-1 px-2 rounded font-bold"
-                : "transition-all duration-300 bg-transparent py-1 px-2 font-bold text-gray-400 hover:text-[#eee] "
-            }
-          >
-            Blog
-          </Link>
-          <Link
-            href={"/products"}
-            className={
-              pathname == "/products"
-                ? "transition-all duration-300 bg-[rgba(255,255,255,0.1)] py-1 px-2 rounded font-bold"
-                : "transition-all duration-300 bg-transparent py-1 px-2 font-bold text-gray-400 hover:text-[#eee] "
-            }
-          >
-            Products
-          </Link>
-          <Link
-            href={"/courses"}
-            className={
-              pathname == "/courses"
-                ? "transition-all duration-300 bg-[rgba(255,255,255,0.1)] py-1 px-2 rounded font-bold"
-                : "transition-all duration-300 bg-transparent py-1 px-2 font-bold text-gray-400 hover:text-[#eee] "
-            }
-          >
-            Courses
-          </Link>
-          <Link
-            href={"/about"}
-            className={
-              pathname == "/about"
-                ? "transition-all duration-300 bg-[rgba(255,255,255,0.1)] py-1 px-2 rounded font-bold"
-                : "transition-all duration-300 bg-transparent py-1 px-2 font-bold text-gray-400 hover:text-[#eee] "
-            }
-          >
-            About
-          </Link>
-        </div>
+        <ul className="hidden lg:inline-grid grid-flow-col gap-5">
+          <li>
+            <Link
+              href={"/"}
+              className={
+                pathname == "/"
+                  ? "transition-all duration-300 bg-[rgba(255,255,255,0.1)] py-1 px-2 rounded font-bold"
+                  : "transition-all duration-300 bg-transparent py-1 px-2 font-bold text-gray-400 hover:text-[#eee] "
+              }
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={"/blog"}
+              className={
+                pathname == "/blog"
+                  ? "transition-all duration-300 bg-[rgba(255,255,255,0.1)] py-1 px-2 rounded font-bold"
+                  : "transition-all duration-300 bg-transparent py-1 px-2 font-bold text-gray-400 hover:text-[#eee] "
+              }
+            >
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={"/products"}
+              className={
+                pathname == "/products"
+                  ? "transition-all duration-300 bg-[rgba(255,255,255,0.1)] py-1 px-2 rounded font-bold"
+                  : "transition-all duration-300 bg-transparent py-1 px-2 font-bold text-gray-400 hover:text-[#eee] "
+              }
+            >
+              Products
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={"/courses"}
+              className={
+                pathname == "/courses"
+                  ? "transition-all duration-300 bg-[rgba(255,255,255,0.1)] py-1 px-2 rounded font-bold"
+                  : "transition-all duration-300 bg-transparent py-1 px-2 font-bold text-gray-400 hover:text-[#eee] "
+              }
+            >
+              Courses
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={"/about"}
+              className={
+                pathname == "/about"
+                  ? "transition-all duration-300 bg-[rgba(255,255,255,0.1)] py-1 px-2 rounded font-bold"
+                  : "transition-all duration-300 bg-transparent py-1 px-2 font-bold text-gray-400 hover:text-[#eee] "
+              }
+            >
+              About
+            </Link>
+          </li>
+        </ul>
       </nav>
       <ToggleMenu></ToggleMenu>
     </>
