@@ -112,8 +112,8 @@ const particles = (props: Props) => {
           emitters: {
             direction: "outside",
             size: {
-              height: 25,
-              width: 25,
+              height: 70,
+              width: 70,
             },
             position: {
               x: 50,

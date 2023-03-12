@@ -1,6 +1,5 @@
 import React from "react";
 import Particles from "./(components)/particles";
-import { HiChevronDoubleUp } from "react-icons/hi";
 import {
   BsTwitter,
   BsLinkedin,
@@ -10,21 +9,19 @@ import {
 } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
-
 import Link from "next/link";
+import Scrollupbtn from "./(components)/scrollupbtn";
 
 type Props = {};
 
 function page({}: Props) {
   return (
     <>
-      <section className="fixed w-screen min-w-screen max-w-screen h-screen min-hscreen max-h-screen top-0 pt-[64px] bg-gradient-to-b to-[#000000] via-[hsl(268,100%,10%)] from-[hsl(249,100%,10%)] bg-auto">
+      <section className="fixed w-screen min-w-screen max-w-screen h-screen min-hscreen max-h-screen top-0 pt-[64px] bg-gradient-to-b to-[#0f0c29] via-[#302b63]  from-[#0f0c29] bg-auto">
         <Particles></Particles>
       </section>
-      <main className="absolute w-screen min-w-screen max-w-screen h-screen min-h-screen top-[100vh] z-50 -translate-y-[100px] bg-inherit">
-        <span className="absolute h-[50px] w-[50px] backdrop-blur-[10px] rounded-full mx-auto right-0 left-0 -translate-y-[125px] border-[1px] border-[rgba(255,255,255,0.1)] z-[51] grid items-center place-content-center">
-          <HiChevronDoubleUp className="p-0 m-0 text-4xl" />
-        </span>
+      <main className="main-section absolute w-screen min-w-screen max-w-screen h-screen min-h-screen top-[100vh] z-50 -translate-y-[100px] bg-inherit">
+        <Scrollupbtn></Scrollupbtn>
         <div className="absolute backdrop-blur-[10px] w-full h-[100px] rounded-t-[24px] border-t-[1px] border-[rgba(255,255,255,0.1)] -translate-y-[100px] grid content-center ">
           <h1 className="md:text-[32px] text-xl font-black text-center uppercase mt-2">
             Discover the universe of code
@@ -70,6 +67,9 @@ function page({}: Props) {
             </li>
           </ul>
         </div>
+        <section id="main-section">
+          <h1>Discover the products that will change your business forever</h1>
+        </section>
       </main>
     </>
   );
