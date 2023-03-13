@@ -1,10 +1,7 @@
 "use client";
 import { HiChevronDoubleUp } from "react-icons/hi";
-import React, { useState } from "react";
 
 const scrollupbtn = () => {
-  const [scrollDown, setScrollDown] = useState(0);
-
   //   useEffect(() => {
   //     window.addEventListener("scroll", () => {
   //       if (window.scrollY > 400) {
