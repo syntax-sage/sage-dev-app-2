@@ -5,7 +5,8 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { Random } from "tsparticles-engine/types/Options/Classes/Random";
 import React from "react";
-import HeroBG from "../../public/HERO_BG.png";
+import Earth from "./earth";
+import Link from "next/link";
 
 type Props = {};
 
@@ -104,6 +105,15 @@ const particles = (props: Props) => {
           detectRetina: true,
         }}
       />
+      <Earth></Earth>
+      <span className="ml-5 mt-5 opacity-25 fixed z-30 bg-transparent t-20">
+        &quot;Earth&quot; on
+        <Link href={"https://skfb.ly/6TwGG"}>SketchFab</Link>
+        by Akshat is licensed under
+        <Link href={"http://creativecommons.org/licenses/by/4.0/"}>
+          Creative Commons Attribution
+        </Link>
+      </span>{" "}
       <Particles
         id="tsparticles"
         init={particlesInit}

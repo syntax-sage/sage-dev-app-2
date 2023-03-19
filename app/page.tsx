@@ -11,7 +11,6 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
 import Link from "next/link";
 import Scrollupbtn from "./(components)/scrollupbtn";
-import Earth from "./(components)/earth";
 
 type Props = {};
 
@@ -19,16 +18,8 @@ function page({}: Props) {
   return (
     <>
       <section className="fixed w-screen min-w-screen max-w-screen h-screen min-hscreen max-h-screen top-0 pt-[64px] bg-gradient-to-b to-[#0f0c29] via-[#302b63]  from-[#0f0c29] bg-auto">
-        <Earth></Earth>
-        <span className="ml-5 mt-5 opacity-25 fixed z-30 bg-transparent">
-          &quot;Earth&quot; on
-          <Link href={"https://skfb.ly/6TwGG"}>SketchFab</Link>
-          by Akshat is licensed under
-          <Link href={"http://creativecommons.org/licenses/by/4.0/"}>
-            Creative Commons Attribution
-          </Link>
-        </span>
-        {/* <Particles></Particles> */}
+
+        <Particles></Particles>
       </section>
       <main className="main-section absolute w-screen min-w-screen max-w-screen h-screen min-h-screen top-[100vh] z-50 -translate-y-[100px] bg-inherit">
         <Scrollupbtn></Scrollupbtn>
