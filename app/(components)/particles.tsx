@@ -62,7 +62,7 @@ const particles = (props: Props) => {
             twinkle: {
               particles: {
                 enable: true,
-                color: "#FFD500",
+                color: "#FF0000",
                 frequency: 0.03,
                 opacity: 1,
               },
