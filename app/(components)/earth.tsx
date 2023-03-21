@@ -15,41 +15,27 @@ const Model = () => {
     </>
   );
 };
+function WindowChecker() {
+  if (typeof window !== "undefined") {
+    let ww = window.innerWidth;
+    let FOV = 0;
+    if (ww <= 1024) {
+      FOV = 1.5;
+    } else {
+      FOV = 1;
+    }
+    return FOV;
+  }
+}
 
 export default function Earth() {
-  const [screenSize, setScreenSize] = useState(getCurrentDimension());
-
-  useEffect(
-    function mount() {
-      const updateDimension = () => {
-        setScreenSize(getCurrentDimension());
-      };
-      window.addEventListener("resize", updateDimension);
-
-      return function unmount() {
-        window.removeEventListener("resize", updateDimension);
-      };
-    },
-    [screenSize]
-  );
-
-  function getCurrentDimension() {
-    return {
-      width: window.innerWidth,
-      height: window.innerHeight,
-    };
-  }
-  let FOV = 0;
-
-  if (screenSize.width <= 1024) {
-    FOV = 1.5;
-  } else {
-    FOV = 1;
-  }
-
   return (
     <div className="globe">
-      <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 2], fov: FOV }}>
+      <Canvas
+        shadows
+        dpr={[1, 2]}
+        camera={{ position: [0, 0, 2], fov: WindowChecker() }}
+      >
         <ambientLight intensity={0.2} />
         <spotLight
           intensity={0.3}
