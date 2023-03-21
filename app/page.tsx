@@ -11,15 +11,26 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
 import Link from "next/link";
 import Scrollupbtn from "./(components)/scrollupbtn";
-
+import Earth from "./(components)/earth";
 type Props = {};
 
 function page({}: Props) {
   return (
     <>
       <section className="fixed w-screen min-w-screen max-w-screen h-screen min-hscreen max-h-screen top-0 pt-[64px] bg-gradient-to-b to-[#0f0c29] via-[#302b63]  from-[#0f0c29] bg-auto">
-
+        <span className="ml-5 mt-5 opacity-25 fixed z-30 bg-transparent t-20">
+          &quot;EARTH&quot;
+          <Link href="https://skfb.ly/6DxnV">
+            &#xff08;https://skfb.ly/6DxnV&#xff09;
+          </Link>
+          by <b> Stéphane Agullo</b> is licensed under Creative Commons
+          Attribution
+          <Link href="http://creativecommons.org/licenses/by/4.0/">
+            &#xff08;http://creativecommons.org/licenses/by/4.0/&#xff09;
+          </Link>
+        </span>
         <Particles></Particles>
+        <Earth></Earth>
       </section>
       <main className="main-section absolute w-screen min-w-screen max-w-screen h-screen min-h-screen top-[100vh] z-50 -translate-y-[100px] bg-inherit">
         <Scrollupbtn></Scrollupbtn>

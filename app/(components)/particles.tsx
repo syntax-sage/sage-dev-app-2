@@ -5,8 +5,6 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { Random } from "tsparticles-engine/types/Options/Classes/Random";
 import React from "react";
-import Earth from "./earth";
-import Link from "next/link";
 
 type Props = {};
 
@@ -105,15 +103,7 @@ const particles = (props: Props) => {
           detectRetina: true,
         }}
       />
-      <Earth></Earth>
-      <span className="ml-5 mt-5 opacity-25 fixed z-30 bg-transparent t-20">
-        &quot;Earth&quot; on
-        <Link href={"https://skfb.ly/6TwGG"}>SketchFab</Link>
-        by Akshat is licensed under
-        <Link href={"http://creativecommons.org/licenses/by/4.0/"}>
-          Creative Commons Attribution
-        </Link>
-      </span>{" "}
+
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -122,8 +112,8 @@ const particles = (props: Props) => {
           emitters: {
             direction: "outside",
             size: {
-              height: 70,
-              width: 70,
+              height: 100,
+              width: 100,
             },
             position: {
               x: 50,
@@ -178,7 +168,7 @@ const particles = (props: Props) => {
               },
 
               random: true,
-              speed: { min: 3, max: 10 },
+              speed: { min: .1, max: 1 },
               straight: true,
             },
             number: {
@@ -195,15 +185,9 @@ const particles = (props: Props) => {
               type: "circle",
             },
             size: {
-              animation: {
-                speed: 10,
-                count: 1,
-                enable: true,
-                startValue: "min",
-                destroy: "max",
-              },
-              random: false,
-              value: { min: 1, max: 50 },
+
+              random: true,
+              value: { min: .1, max: 3 },
             },
           },
           detectRetina: true,

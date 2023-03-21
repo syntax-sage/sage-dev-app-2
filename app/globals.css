@@ -48,5 +48,11 @@ canvas {
   display: grid;
   place-items: center;
   height: 100vh;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  cursor: grab;
+}
+.globe:active {
   cursor: grabbing;
 }
