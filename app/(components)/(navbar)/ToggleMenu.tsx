@@ -66,14 +66,14 @@ const ToggleMenu = () => {
         </Link>
         <Link
           onClick={() => isOpen(!openMenu)}
-          href={"/products"}
+          href={"/services"}
           className={
-            pathname == "/products"
+            pathname == "/services"
               ? "transition-all duration-300 bg-[rgba(255,255,255,0.1)] py-1 px-2 rounded font-bold"
               : "transition-all duration-300 bg-transparent py-1 px-2 font-bold text-gray-400 hover:text-[#eee] "
           }
         >
-          Products
+          Services
         </Link>
         <Link
           onClick={() => isOpen(!openMenu)}

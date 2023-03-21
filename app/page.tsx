@@ -32,7 +32,7 @@ function page({}: Props) {
         <Particles></Particles>
         <Earth></Earth>
       </section>
-      <main className="main-section absolute w-screen min-w-screen max-w-screen h-screen min-h-screen top-[100vh] z-50 -translate-y-[100px] bg-inherit">
+      <main className="main-section absolute w-screen min-w-screen max-w-screen h-auto min-h-screen top-[100vh] z-50 -translate-y-[100px] bg-inherit">
         <Scrollupbtn></Scrollupbtn>
         <div className="absolute backdrop-blur-[10px] w-full h-[100px] rounded-t-[24px] border-t-[1px] border-[rgba(255,255,255,0.1)] -translate-y-[100px] grid content-center ">
           <h1 className="md:text-[32px] text-3xl font-black text-center uppercase mt-2">
@@ -83,7 +83,7 @@ function page({}: Props) {
         </div>
         <section
           id="main-section"
-          className="pt-10 w-full max-w-[1024px] pr-5 pl-5 text-center"
+          className="pt-10 w-full max-w-[1024px] text-center m-auto"
         >
           <h1 className="text-3xl md:text-[32px] font-bold">
             A.I. Powered Services
@@ -91,6 +91,199 @@ function page({}: Props) {
           <p className="w-[320px] max-w-[1024px] md:w-full m-auto mt-5">
             Discover A.I. powered services that will revolutionize your
             business.
+          </p>
+          <div className="grid m-auto mt-5 md:grid-cols-2 md:gap-5 h-auto pb-5 mb-5">
+            <div className="rounded-md h-[300px] w-full max-w-[600px] bg-[#d9d9d9] text-[#222] shadow-md shadow-transparent hover:shadow-md hover:shadow-orange-300 transition-all duration-300">
+              <h2>Copy Writing</h2>
+            </div>
+            <div className="rounded-md h-[300px] w-full max-w-[600px] border-1 border border-[#d9d9d9] shadow-md shadow-transparent hover:shadow-md hover:shadow-orange-300 transition-all duration-300">
+              <h2>Websites</h2>
+            </div>
+            <div className="rounded-md h-[300px] w-full max-w-[600px] bg-[#d9d9d9] text-[#222] md:order-last shadow-md shadow-transparent hover:shadow-md hover:shadow-orange-300 transition-all duration-300">
+              <h2>UI\UX Design</h2>
+            </div>
+            <div className="rounded-md h-[300px] w-full max-w-[600px] border-1 border border-[#d9d9d9] shadow-md shadow-transparent hover:shadow-md hover:shadow-orange-300 transition-all duration-300">
+              <h2>Branding</h2>
+            </div>
+          </div>
+          <Link
+            href={"/services"}
+            className=" text-lg mt-10 m-auto rounded-sm bg-orange-700 py-2 px-5 shadow-lg shadow-transparent hover:shadow-lg hover:shadow-black transition-all duration-300 hover:bg-orange-600"
+          >
+            Explore Our Services
+          </Link>
+        </section>
+        <section className="pt-10 w-full max-w-[1024px] text-center m-auto">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            quos sint accusantium nostrum numquam! Officia corrupti quas
+            consequatur explicabo accusantium. Corporis et aut repudiandae
+            cupiditate laudantium debitis sit in officiis provident libero
+            obcaecati molestiae exercitationem a veniam deleniti officia, illum
+            perspiciatis accusantium aspernatur numquam non vel voluptatibus
+            nulla reiciendis. Odio?
           </p>
         </section>
       </main>
