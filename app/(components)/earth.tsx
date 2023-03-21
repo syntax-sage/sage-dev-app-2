@@ -50,6 +50,8 @@ export default function Earth() {
           <Environment preset="city" />
         </Suspense>
         <OrbitControls
+          enableZoom={false}
+          enablePan={false}
           autoRotate
           autoRotateSpeed={0.5}
           addEventListener={undefined}

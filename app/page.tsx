@@ -35,12 +35,14 @@ function page({}: Props) {
       <main className="main-section absolute w-screen min-w-screen max-w-screen h-screen min-h-screen top-[100vh] z-50 -translate-y-[100px] bg-inherit">
         <Scrollupbtn></Scrollupbtn>
         <div className="absolute backdrop-blur-[10px] w-full h-[100px] rounded-t-[24px] border-t-[1px] border-[rgba(255,255,255,0.1)] -translate-y-[100px] grid content-center ">
-          <h1 className="md:text-[32px] text-xl font-black text-center uppercase mt-2">
-            Discover the universe of code
+          <h1 className="md:text-[32px] text-3xl font-black text-center uppercase mt-2">
+            Discover the world of code
           </h1>
         </div>
-        <div className="text-center mt-5">
-          <h2 className="text-[32px] font-medium">Join The Community:</h2>
+        <div className="text-center mt-10">
+          <h2 className="md:text-[32px] text-3xl uppercase">
+            Join The Community:
+          </h2>
           <ul className="flex flex-row justify-center text-[32px] mt-2 gap-5">
             <li className="hover:text-[rgb(29,155,240)] transition-all duration-300">
               <Link href={"https://twitter.com/syntax_sage"}>
@@ -79,8 +81,17 @@ function page({}: Props) {
             </li>
           </ul>
         </div>
-        <section id="main-section">
-          <h1>Discover the products that will change your business forever</h1>
+        <section
+          id="main-section"
+          className="pt-10 w-full max-w-[1024px] pr-5 pl-5 text-center"
+        >
+          <h1 className="text-3xl md:text-[32px] font-bold">
+            A.I. Powered Services
+          </h1>
+          <p className="w-[320px] max-w-[1024px] md:w-full m-auto mt-5">
+            Discover A.I. powered services that will revolutionize your
+            business.
+          </p>
         </section>
       </main>
     </>
